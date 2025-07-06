@@ -17,6 +17,8 @@ func initRouter() *gin.Engine {
 	// 注册使用的中间件
 	r.Use(logger.GinLogger(), logger.GinRecovery(true))
 
+	r.POST("/test", test)
+
 	return r
 }
 
