@@ -1,9 +1,9 @@
 package server
 
 import (
-	"backend/pkg/response"
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
+	"goweb_staging/pkg/response"
 )
 
 func test(c *gin.Context) {

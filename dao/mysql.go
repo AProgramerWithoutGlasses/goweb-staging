@@ -1,11 +1,11 @@
 package dao
 
 import (
-	"backend/pkg/settings"
 	"fmt"
 	"go.uber.org/zap"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
+	"goweb_staging/pkg/settings"
 )
 
 func initDB(m *settings.MySQLConfig) *gorm.DB {

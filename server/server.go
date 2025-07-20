@@ -1,9 +1,10 @@
 package server
 
 import (
-	"backend/logger"
-	"backend/pkg/settings"
-	"backend/service"
+	"goweb_staging/logger"
+	"goweb_staging/middleware"
+	"goweb_staging/pkg/settings"
+	"goweb_staging/service"
 
 	"github.com/gin-gonic/gin"
 )
@@ -15,7 +16,10 @@ func initRouter() *gin.Engine {
 	r := gin.Default()
 
 	// 注册使用的中间件
-	r.Use(logger.GinLogger(), logger.GinRecovery(true))
+	r.Use(logger.GinLogger(), logger.GinRecovery(true), middleware.CORSMiddleware())
+
+	// jwt认证中间件
+	r.Use(middleware.JWTAuthMiddleware())
 
 	r.POST("/test", test)
 

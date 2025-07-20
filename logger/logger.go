@@ -1,12 +1,12 @@
 package logger
 
 import (
-	"backend/pkg/settings"
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"
+	"goweb_staging/pkg/settings"
 	"net"
 	"net/http"
 	"net/http/httputil"

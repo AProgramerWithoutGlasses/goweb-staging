@@ -1,8 +1,8 @@
 package dao
 
 import (
-	"backend/pkg/settings"
 	"github.com/go-redis/redis/v8"
+	"goweb_staging/pkg/settings"
 	"time"
 )
 

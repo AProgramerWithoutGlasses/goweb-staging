@@ -1,8 +1,8 @@
 package dao
 
 import (
-	"backend/model"
 	"context"
+	"goweb_staging/model"
 )
 
 func (dao *Dao) Test() (test model.Test, err error) {

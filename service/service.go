@@ -1,9 +1,9 @@
 package service
 
 import (
-	"backend/dao"
-	"backend/pkg/settings"
 	"golang.org/x/sync/singleflight"
+	"goweb_staging/dao"
+	"goweb_staging/pkg/settings"
 )
 
 type Service struct {

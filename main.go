@@ -1,12 +1,12 @@
 package main
 
 import (
-	"backend/logger"
-	"backend/pkg/settings"
-	"backend/server"
 	"context"
 	"fmt"
 	"go.uber.org/zap"
+	"goweb_staging/logger"
+	"goweb_staging/pkg/settings"
+	"goweb_staging/server"
 	"log"
 	"net/http"
 	"os"
